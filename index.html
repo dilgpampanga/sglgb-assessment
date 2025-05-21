@@ -29,7 +29,7 @@
     <input type="number" id="budget" style="width:100%"><br><br>
   </label>
 
-  <button onclick="evaluate()" style="padding:10px 20px; background:#28a745; color:#fff; border:none; border-radius:5px;">Evaluate</button>
+  <button onclick="funchEvaluate()" style="padding:10px 20px; background:#28a745; color:#fff; border:none; border-radius:5px;">Evaluate</button>
   <button onclick="savePDF()" style="padding:10px 20px; background:#007bff; color:#fff; border:none; border-radius:5px; margin-left:10px;">Save as PDF</button>
   <button onclick="resetForm()" style="padding:10px 20px; background:#dc3545; color:#fff; border:none; border-radius:5px; margin-left:10px;">Restart</button>
 
@@ -38,7 +38,7 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 <script>
-function evaluate() {
+function funcEvaluate() {
   const structure = document.getElementById("structure").value;
   const plan = document.getElementById("plan").value;
   const revenue = parseFloat(document.getElementById("revenue").value);
